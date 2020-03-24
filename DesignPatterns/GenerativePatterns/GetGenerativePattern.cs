@@ -10,7 +10,7 @@ namespace DesignPatterns.GenerativePatterns
             
             do
             {
-                Console.WriteLine("1 - Singleton\n 0 - Back\n");
+                Console.WriteLine("1 - Singleton\n2 - Factory Method\n 0 - Back\n");
                 var str = Console.ReadLine();
                 
                 if (int.TryParse(str, out n) && n >= 0)
@@ -19,6 +19,10 @@ namespace DesignPatterns.GenerativePatterns
                     {
                         case 1:
                             patternContext.SetPattern(new SingletonStart());
+                            patternContext.StartPattern();
+                            break;
+                        case 2:
+                            patternContext.SetPattern(new FactoryMethodStart());
                             patternContext.StartPattern();
                             break;
                     }

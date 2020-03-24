@@ -10,7 +10,6 @@ namespace DesignPatterns.GenerativePatterns
 
         public void MainCall()
         {
-            Console.WriteLine("Singleton");
             Console.WriteLine(_description);
             MainSingleton mainSingleton = new MainSingleton();
             mainSingleton.Singleton();

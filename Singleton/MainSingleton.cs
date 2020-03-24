@@ -6,7 +6,7 @@ namespace Singleton
     {
         public void Singleton()
         {
-            Console.WriteLine("Start");
+            Console.WriteLine("Singleton - start");
 
             var singleton = global::Singleton.Singleton.GetInstance();
             var singletonNew = global::Singleton.Singleton.GetInstance();
